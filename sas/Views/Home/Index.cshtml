@@ -1,0 +1,12 @@
+﻿@model IEnumerable<WebApplication1.Models.BlobImage>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach (var item in Model) {
+     <img src="@item.BlobUri" />
+}
+
